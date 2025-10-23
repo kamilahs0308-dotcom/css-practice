@@ -10,8 +10,8 @@ h1 {
 /* Start here by styling the main div section */
 .main {
     background-color: beige;
-    width: 500px;
-    padding: 200px;
+    width: fit-content;
+    padding: 100px;
     margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
@@ -20,7 +20,8 @@ h1 {
 
 .square {
     font-size: 50px;
-    padding: 50px;
+    padding: 20px;
+    margin: 20px;
     
 }
 
@@ -28,6 +29,14 @@ h1 {
     content :"??"
 }
 
-#s1:hover {
-    
+.square:hover {
+    background-color: rgb(251, 196, 94);
+}
+
+#s1:active::after {
+    content:"👻";
+}
+
+.square:active::after {
+    content: "☠️";
 }
